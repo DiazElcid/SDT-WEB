@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 회원가입 </title>
+    <link href="img/icon.png" rel="shortcut icon"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <style>
+           * {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    }
+    .wrap {
+        height: 100%;
+        width: 100%;
+        background-image:url(img/슬라이드1.png);
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+    }
+    .form-wrap {
+        width: 500px;
+        height: 500px;
+        position: relative;
+        margin: 4% auto;
+        background:#fff;        /* fff */
+        padding: 5px;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+    .input-group {
+        top: 150px;
+        position: absolute;
+        width: 300px;
+        margin-left: 50px;
+    }
+    .input-field {
+        width: 340px;
+        padding: 10px 0;
+        margin: 5px 0;
+        border: none;
+        border-bottom: 1px solid #999;
+        outline: none;
+        background: transparent;
+    }
+    .submit {
+        background: white;
+        border: 0;
+        margin-top: 20px;
+        margin-left: 100px;
+    }
+    .image {
+        width: 200px;
+        margin-left: 165px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+    footer {
+        height: 100px;
+        clear: both;
+        background-color: rgb(41, 38, 38);
+    }
+    #ment {
+        list-style-type: none;
+        padding-top: 20px;
+    }
+    #ment1 {
+        list-style-type: none;
+        padding-top: 20px;
+        text-align: center;
+    }
+    #bottomment {
+        padding-top: 0px;
+        text-align: center;
+        font-size: 15px;
+        color: white;
+    }
+    .holder {
+        width: 100px;
+        height: 40px;
+        border-radius: 10px;
+        margin-left: 10px;
+    }
+    th {
+        width: 110px;
+        text-align: right;
+    }
+    td {
+        padding-left: 10px;
+    }
+    </style>
+</head>
+<div id="preloder">
+    <div class="loader"></div>
+</div>
+
+<div class="wrap">
+    <div class="form-wrap">
+        <div class="image">
+          <a href="home.html"><img src="img/logo1.png" style="width:180px;"></a> 
+        </div>
+        <form name="register" method="post" class="register">
+            <table width="500" style="padding:5px 0 5px 0; ">
+                <tr>
+                  <th> 아이디 </th>
+                  <td>
+                  <input type="text" class="input-field" name="cursor:pointer" placeholder="ID" required>
+                  </td>
+                </tr>
+                <tr>
+                  <th>비밀번호</th>
+                  <td><input type="password" name="mbpw" class="input-field" placeholder="Password" required></td>
+                </tr>
+                <tr>
+                    <th>                   </th>
+                    <td> 영문/숫자포함 6자 이상</td>
+                </tr>
+                <tr>
+                  <th>비밀번호 확인</th>
+                  <td><input type="password" name="mbpw_re" class="input-field" placeholder="Password again" required></td>
+                </tr>
+                 <tr>
+                   <th>이메일</th>
+                   <td>
+                     <input type='text' name="email" class="input-field" style="width: 100px;"> @
+                     <input type='text' name="email_dns" class="input-field" style="width: 100px;">
+                       <select name="emailaddr" class="holder">
+                          <option value="">직접입력</option>
+                          <option value="daum.net">daum.net</option>
+                          <option value="gmail.com">gmail.com</option>
+                          <option value="hanmail.net">hanmail.net</option>
+                          <option value="naver.com">naver.com</option>
+                          <option value="nate.com">nate.com</option>
+                       </select>
+                     </td>
+                  </tr>
+                    </table>
+                   </td>
+                   </tr>
+                   <button class="submit"><a href="login.html"> <img src="img/가입완료.png" style="width: 300px;"> </a></button>
+        </form>
+</div>
+<footer>
+    <ul id="bottomment">
+      <li id="ment"> 
+         <b>  ADDRESS </b> : 경기도 성남시 수정구 복정로 76, 2호관  
+         &nbsp;&nbsp; <b>  TEL </b>: 032-000-0000 
+         &nbsp;&nbsp;<b>  EMAIL</b> : Du@sdt.com
+      </li>
+      <li id="ment1">
+         <a href="#" style="color: white; text-decoration: none;"> <b>개인정보 처리 방침 </b>
+         </a> |  <a href="#" style="color: white; text-decoration: none;"> <b>서비스 정책 </b> </a>
+      </li>
+</ul>
+</footer>
+</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/circle-progress.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 로그인 </title>
+    <link href="img/icon.png" rel="shortcut icon"/>
+	<link rel="stylesheet" href="css/style.css"/>
+    <style>
+           * {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    }
+    .wrap {
+        height: 100%;
+        width: 100%;
+        background-image:url(img/슬라이드1.png);
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+    }
+    .form-wrap {
+        width: 400px;
+        height: 430px;
+        position: relative;
+        margin: 4% auto;
+        background:#fff;        /* fff */
+        padding: 5px;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+    .input-group {
+        top: 150px;
+        position: absolute;
+        width: 300px;
+        margin-left: 50px;
+    }
+    .input-field {
+        width: 100%;
+        padding: 10px 0;
+        margin: 5px 0;
+        border: none;
+        border-bottom: 1px solid #999;
+        outline: none;
+        background: transparent;
+    }
+    .submit {
+        background: white;
+        border: 0;
+        margin-top: 0px;
+    }
+    .submit1 {
+        cursor: pointer;
+        float:left;
+        text-align: center;
+    }
+    .checkbox {
+        margin: 15px 7px 25px 0;
+    }
+    span {
+        color: #777;
+        font-size: 12px;
+        padding-top: 13px;
+        position: absolute;
+    }
+    .image {
+        width: 200px;
+        margin-top: 15px;
+        margin-left: 115px;
+        cursor: pointer;
+    }
+    footer {
+        height: 100px;
+        clear: both;
+        background-color: rgb(41, 38, 38);
+    }
+    #ment {
+        list-style-type: none;
+        padding-top: 20px;
+    }
+    #ment1 {
+        list-style-type: none;
+        padding-top: 20px;
+        text-align: center;
+    }
+    #bottomment {
+        padding-top: 0px;
+        text-align: center;
+        font-size: 15px;
+        color: white;
+    }
+    </style>
+</head>
+<div id="preloder">
+    <div class="loader"></div>
+</div>
+
+<div class="wrap">
+    <div class="form-wrap">
+        <div class="image">
+          <a href="HOME.html"><img src="img/logo1.png" style="width:180px;"></a> 
+        </div>
+        <form id="login" action="" class="input-group">
+            <input type="text" class="input-field" placeholder="ID" required>
+            <input type="password" class="input-field" placeholder="Password" required>
+            <input type="checkbox" class="checkbox"><span>ID 저장</span>
+            <button class="submit"><a href="home.html"> <img src="img/login.png" style="width: 300px;"> </a></button>
+            <div class="submit1"> <a href="register.html"><img src="img/회원가입.png" style="width: 97px;"> </a></div> 
+            <div class="submit1"><img src="img/찾기.png" style="width: 196px; padding-left: 7px;"> </div>
+        </form>
+</div>
+<footer>
+    <ul id="bottomment">
+      <li id="ment"> 
+         <b>  ADDRESS </b> : 경기도 성남시 수정구 복정로 76, 2호관  
+         &nbsp;&nbsp; <b>  TEL </b>: 032-000-0000 
+         &nbsp;&nbsp;<b>  EMAIL</b> : Du@sdt.com
+      </li>
+      <li id="ment1">
+         <a href="#" style="color: white; text-decoration: none;"> <b>개인정보 처리 방침 </b>
+         </a> |  <a href="#" style="color: white; text-decoration: none;"> <b>서비스 정책 </b> </a>
+      </li>
+</ul>
+</footer>
+</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/circle-progress.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
